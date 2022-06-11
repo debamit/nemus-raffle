@@ -1,3 +1,4 @@
+dotenv: .env
 networks:
   default: mainnet-fork
   mainnet-fork:
