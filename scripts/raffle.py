@@ -52,7 +52,7 @@ def main(input_file_path:str='./test_file/address.csv', output_file_path:str='wi
         output_data = get_address_to_ens_mapping(winners, addess_to_ens_mapping)
          # Write the list of winners out to CSV file
         io_service.write_results(output_data, output_file_path)
-        print(f"Winner list written to path {output_file_path}")
+        print(f"Winner list written to path `{output_file_path}`")
     except Exception as ex:
         print(ex)
         raise ex
