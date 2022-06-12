@@ -5,12 +5,19 @@ DAO raffle to select 125 random winners.
 ## Installation and Setup
 
 
-1.Clone project ```git clone git@github.com:debamit/nemus-raffle.git```. 
+1. Clone project 
+```
+git clone git@github.com:debamit/nemus-raffle.git
+```
 Recommend installing pyenv to manage python version.
 Installation instruction regarding pyenv found here https://github.com/pyenv/pyenv
-```pyenv install 3.10.3```
+```
+pyenv install 3.10.3
+```
 cd into project directory to set python version for the project to use.
-```pyenv local 3.10.3```
+```
+pyenv local 3.10.3
+```
 
 2. Might have to open a new terminal window before running `pip install -r requirements.txt`.
 
