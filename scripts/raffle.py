@@ -26,7 +26,7 @@ def main(input_file_path:str='./test_file/address.csv', output_file_path:str='wi
         if not input_file_path or not os.path.exists(input_file_path):
             raise ValueError(f"Please provide a valid file path for the CSV . Path {input_file_path} does not exists")
 
-        print(f"Reading {input_file_path} where wallet address column name is {address_col_name}")
+        print(f"Reading `{input_file_path}` where wallet address column name is `{address_col_name}`")
 
         # read given file and returns a mapping of valid deduped address to ens
         addess_to_ens_mapping:Dict[str, str] = load_data(input_file_path, address_col_name)
@@ -52,6 +52,7 @@ def main(input_file_path:str='./test_file/address.csv', output_file_path:str='wi
         output_data = get_address_to_ens_mapping(winners, addess_to_ens_mapping)
          # Write the list of winners out to CSV file
         io_service.write_results(output_data, output_file_path)
+        print(f"Winner list written to path {output_file_path}")
     except Exception as ex:
         print(ex)
         raise ex

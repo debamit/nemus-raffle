@@ -1,0 +1,2 @@
+eth-brownie==1.19.0
+python-graphql-client==0.4.3

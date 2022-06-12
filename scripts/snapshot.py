@@ -1,6 +1,6 @@
 from brownie import accounts, network, Contract
 from python_graphql_client import GraphqlClient
-from typing import List
+from typing import List, Set
 
 client = GraphqlClient(endpoint="https://hub.snapshot.org/graphql")
 
@@ -28,7 +28,7 @@ query Votes ($space: String, $voters: [String]){
 
 variables = {"space": "daocity.eth"}
 
-def get_addresses_that_have_voted(addresses:List[str]):
+def get_addresses_that_have_voted(addresses:List[str]) -> Set[str]:
     try :
         if addresses:
           variables.update({"voters":addresses})
