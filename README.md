@@ -15,6 +15,11 @@ Installation instruction regarding pyenv found here https://github.com/pyenv/pye
 export WEB3_INFURA_PROJECT_ID=YourProjectID
 ```
 
+4. Needs local installation of `ganache-cli`. [Ganache-CLI](https://github.com/trufflesuite/ganache-cli).
+
+
+
+
 ## Testing
 To make sure everthing is setup as expected run test
 To run the tests:
@@ -23,7 +28,18 @@ To run the tests:
 brownie test
 ```
 
+## Expectations:
+Valid CSV file, with atleast one record
+CSV with header column name matching the input argument.
+Atleast 1 or more winners. In case of `number_of_winners` greater than than the number of addresses available. The number of winners will be equal to all the eligible addresses.
+
 ## To run the main script
+
+There are 4 different arguments that you can pass to the main function .
+`file_path` : absolute or relative file path of the CSV  (Default: './test_file/address.csv')
+`output_file_path` : absolute or relative file path of the CSV  (Default: './test_file/address.csv')
+`address_col_name` : column name which contains adresses or ens handles  (Default: 'address')
+`number_of_winners` : number of winners that need to be selected  (Default: 125)
 ```bash
-$ brownie run scripts/raffle.py --network mainnet-fork
+$ brownie run scripts/raffle.py main file_path output_file_path address_col_name number_of_winners --network mainnet-fork
 ```
