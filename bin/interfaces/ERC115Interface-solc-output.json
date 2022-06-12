@@ -1,0 +1,274 @@
+{
+    "contracts": {
+        "/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol": {
+            "ERC115Interface": {
+                "abi": [
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "address[]",
+                                "name": "owners",
+                                "type": "address[]"
+                            },
+                            {
+                                "internalType": "uint256[]",
+                                "name": "ids",
+                                "type": "uint256[]"
+                            }
+                        ],
+                        "name": "balanceOfBatch",
+                        "outputs": [
+                            {
+                                "internalType": "uint256[]",
+                                "name": "balances",
+                                "type": "uint256[]"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "",
+                        "opcodes": "",
+                        "sourceMap": ""
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "",
+                        "opcodes": "",
+                        "sourceMap": ""
+                    },
+                    "gasEstimates": null,
+                    "methodIdentifiers": {
+                        "balanceOfBatch(address[],uint256[])": "4e1273f4"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"owners\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"balances\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol\":\"ERC115Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol\":{\"keccak256\":\"0x3ea589a45cefd13e5f925225159540b5219bdea4c3b3e4b30009f8d4acf4b5ae\",\"urls\":[\"bzz-raw://a5ee018f17fd5c3c63b22c30af5471b9d6d18a69896feca7b0bfd3c09be8989b\",\"dweb:/ipfs/QmYKc895goxEVFSjUCDfDDHGheTSizuT6WDQw3Jdnf9JUi\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [],
+                    "types": null
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "errors": [
+        {
+            "component": "general",
+            "errorCode": "1878",
+            "formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> /Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol\n\n",
+            "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+            "severity": "warning",
+            "sourceLocation": {
+                "end": -1,
+                "file": "/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol",
+                "start": -1
+            },
+            "type": "Warning"
+        }
+    ],
+    "sources": {
+        "/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol": {
+            "ast": {
+                "absolutePath": "/Users/c03013/nemus-raffle/interfaces/ERC115Interface.sol",
+                "exportedSymbols": {
+                    "ERC115Interface": [
+                        14
+                    ]
+                },
+                "id": 15,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".9"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "ERC115Interface",
+                        "contractDependencies": [],
+                        "contractKind": "interface",
+                        "fullyImplemented": false,
+                        "id": 14,
+                        "linearizedBaseContracts": [
+                            14
+                        ],
+                        "name": "ERC115Interface",
+                        "nameLocation": "34:15:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "functionSelector": "4e1273f4",
+                                "id": 13,
+                                "implemented": false,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "balanceOfBatch",
+                                "nameLocation": "65:14:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 8,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 4,
+                                            "mutability": "mutable",
+                                            "name": "owners",
+                                            "nameLocation": "99:6:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 13,
+                                            "src": "80:25:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "calldata",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                                                "typeString": "address[]"
+                                            },
+                                            "typeName": {
+                                                "baseType": {
+                                                    "id": 2,
+                                                    "name": "address",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "80:7:0",
+                                                    "stateMutability": "nonpayable",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "id": 3,
+                                                "nodeType": "ArrayTypeName",
+                                                "src": "80:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                                                    "typeString": "address[]"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 7,
+                                            "mutability": "mutable",
+                                            "name": "ids",
+                                            "nameLocation": "126:3:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 13,
+                                            "src": "107:22:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "calldata",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                                                "typeString": "uint256[]"
+                                            },
+                                            "typeName": {
+                                                "baseType": {
+                                                    "id": 5,
+                                                    "name": "uint256",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "107:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 6,
+                                                "nodeType": "ArrayTypeName",
+                                                "src": "107:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                                                    "typeString": "uint256[]"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "79:51:0"
+                                },
+                                "returnParameters": {
+                                    "id": 12,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 11,
+                                            "mutability": "mutable",
+                                            "name": "balances",
+                                            "nameLocation": "171:8:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 13,
+                                            "src": "154:25:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                                                "typeString": "uint256[]"
+                                            },
+                                            "typeName": {
+                                                "baseType": {
+                                                    "id": 9,
+                                                    "name": "uint256",
+                                                    "nodeType": "ElementaryTypeName",
+                                                    "src": "154:7:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "id": 10,
+                                                "nodeType": "ArrayTypeName",
+                                                "src": "154:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                                                    "typeString": "uint256[]"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "153:27:0"
+                                },
+                                "scope": 14,
+                                "src": "56:125:0",
+                                "stateMutability": "view",
+                                "virtual": false,
+                                "visibility": "external"
+                            }
+                        ],
+                        "scope": 15,
+                        "src": "24:159:0",
+                        "usedErrors": []
+                    }
+                ],
+                "src": "0:184:0"
+            },
+            "id": 0
+        }
+    }
+}

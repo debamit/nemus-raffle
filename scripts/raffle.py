@@ -17,10 +17,10 @@ def draw(address_list:List[str], number_of_winners:int = 125) -> Set:
         return winners
     return set()
 
-def lfg(file_path:str='./test_file/address.csv'):
+def lfg(file_path:str='./test_file/address.csv', address_col_name:str="address"):
     print(f"Reading {file_path}")
     # read given file and returns a mapping of valid deduped address to ens
-    addess_to_ens_mapping:Dict[str, str] = load_data(file_path)
+    addess_to_ens_mapping:Dict[str, str] = load_data(file_path, address_col_name)
     addresses_to_check:List[str] = list(addess_to_ens_mapping.keys())
     print(f"{len(addresses_to_check)} unique addresses in file.")
     # filters the addresses that own atleast one of the citizen NFTs
